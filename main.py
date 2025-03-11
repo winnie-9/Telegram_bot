@@ -10,27 +10,37 @@ BOT_USERNAME: Final = os.getenv("BOT_USERNAME")
 
 
 TOKEN: Final = API_KEY
-BOT_USERNAME: Final = "@movewithme"
-
-# commands
+BOT_USERNAME: Final = BOT_USERNAME
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """ Hey dev, future you (and everyone else) will thank you:
+    add some doc comments 🙃
+    """
+
     await update.message.reply_text("Hello. I am squishy")
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """ Hey dev, future you (and everyone else) will thank you:
+    add some doc comments 🙃
+    """
     await update.message.reply_text("I am a music bot. Just gimme the title of any song or the most popular line in the song and I will get it for you  ")
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """ Hey dev, future you (and everyone else) will thank you:
+    add some doc comments 🙃
+    """
     await update.message.reply_text("This is a custom command")
 
-# Handle res ponses
+# Handle responses
 
 
 def handle_response(text: str) -> str:
-
+    """ Hey dev, future you (and everyone else) will thank you:
+    add some doc comments 🙃
+    """
     processed: str = text.lower()
     if "hello" in processed:
         return "hey there"
@@ -53,6 +63,9 @@ def handle_response(text: str) -> str:
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """ Hey dev, future you (and everyone else) will thank you:
+    add some doc comments 🙃
+    """
     message_type: str = update.message.chat.type
     text: str = update.message.text
 
