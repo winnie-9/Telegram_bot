@@ -23,12 +23,13 @@
 4. Activate the virtual environment.
 
    ```sh
-   myenv\Scripts\activate # Windows (Command Prompt)
-   venv\Scripts\Activate.ps1 # Windows (Powershell)
+   env\Scripts\activate # Windows (Command Prompt)
+   env\Scripts\Activate.ps1 # Windows (Powershell)
+   source env\Scripts\activate # Windows (Git Bash)
    ```
 
    ```sh
-   source myenv/bin/activate # macOS/Linux
+   source env/bin/activate # macOS/Linux
    ```
 
 5. **Install Required Dependencies**:

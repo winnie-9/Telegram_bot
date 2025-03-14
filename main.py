@@ -14,8 +14,9 @@ BOT_USERNAME: Final = BOT_USERNAME
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """ Hey dev, future you (and everyone else) will thank you:
-    add some doc comments 🙃
+    """ what it does
+    the input arguments
+    what it returns
     """
 
     await update.message.reply_text("Hello. I am squishy")
