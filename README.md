@@ -37,3 +37,9 @@
 ```sh
 pip install -r requirements.txt
 ```
+
+6. **Add your .env file, and add the values**
+```sh
+API_KEY=<your_api_key>
+BOT_USERNAME=<your_bot_username>
+```
